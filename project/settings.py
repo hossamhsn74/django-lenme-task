@@ -45,13 +45,13 @@ INSTALLED_APPS = [
     # 'allauth',
     # 'allauth.account',
     'rest_auth.registration',
-    # 'drf_yasg',
+    'drf_yasg',
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#     'PAGE_SIZE': 10
+# }
 
 
 MIDDLEWARE = [
