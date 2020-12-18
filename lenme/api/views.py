@@ -43,7 +43,7 @@ class BorrowerDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = serializer.data
         response = {"status_code": status.HTTP_200_OK,
                     "message": "Successfully retrieved",
-                    "result": data}
+                    "data": data}
         return Response(response)
 
     def patch(self, request, *args, **kwargs):
@@ -53,7 +53,7 @@ class BorrowerDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = serializer.data
         response = {"status_code": status.HTTP_200_OK,
                     "message": "Successfully updated",
-                    "result": data}
+                    "data": data}
         return Response(response)
 
     def delete(self, request, *args, **kwargs):
@@ -271,7 +271,7 @@ class InvestorDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = serializer.data
         response = {"status_code": status.HTTP_200_OK,
                     "message": "Successfully retrieved",
-                    "result": data}
+                    "data": data}
         return Response(response)
 
     def patch(self, request, *args, **kwargs):
@@ -281,7 +281,7 @@ class InvestorDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = serializer.data
         response = {"status_code": status.HTTP_200_OK,
                     "message": "Successfully updated",
-                    "result": data}
+                    "data": data}
         return Response(response)
 
     def delete(self, request, *args, **kwargs):
